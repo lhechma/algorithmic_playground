@@ -1,3 +1,5 @@
+package org.lhechma.ChangeProblem;
+
 import java.lang.Comparable;
 import java.util.Collections;
 import java.util.LinkedList;
@@ -10,7 +12,7 @@ public class ChangeProblem{
 	public static void main(String... args){
 	    int[] denominators = {1,5,10,25};
 		Set<Change> solutionSpace = new TreeSet<>();
-		doFindChange(77,denominators,new LinkedList<>(), solutionSpace);
+		doFindChange(77,denominators,new LinkedList<Integer>(), solutionSpace);
 		System.out.println(solutionSpace.iterator().next());
 		
 	}
